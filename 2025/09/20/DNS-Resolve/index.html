@@ -20,24 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.floweronruins.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="Working hard on improving myself">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Floweonruins&#39;s blog">
-<meta property="og:url" content="https://www.floweronruins.com/index.html">
+    <meta name="description" content="在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DNS Resolve">
+<meta property="og:url" content="https://www.floweronruins.com/2025/09/20/DNS-Resolve/index.html">
 <meta property="og:site_name" content="Floweonruins&#39;s blog">
-<meta property="og:description" content="Working hard on improving myself">
+<meta property="og:description" content="在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2025-09-19T16:16:35.000Z">
+<meta property="article:modified_time" content="2025-09-19T16:50:27.040Z">
 <meta property="article:author" content="Duan Xu">
+<meta property="article:tag" content="Blog Management">
+<meta property="article:tag" content="Reflection and Reminder">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://www.floweronruins.com/">
+<link rel="canonical" href="https://www.floweronruins.com/2025/09/20/DNS-Resolve/">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"en","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://www.floweronruins.com/2025/09/20/DNS-Resolve/","path":"2025/09/20/DNS-Resolve/","title":"DNS Resolve"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Floweonruins's blog</title>
+<title>DNS Resolve | Floweonruins's blog</title>
   
 
 
@@ -90,7 +94,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Floweonruins's blog</h1>
+      <p class="site-title">Floweonruins's blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">For sharing and learning</p>
@@ -206,16 +210,17 @@
 
     </div>
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
 
-    
+
+  
 
 
 <div class="post-block">
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
     <link itemprop="mainEntityOfPage" href="https://www.floweronruins.com/2025/09/20/DNS-Resolve/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -229,13 +234,13 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Floweonruins's blog">
+      <meta itemprop="name" content="DNS Resolve | Floweonruins's blog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/09/20/DNS-Resolve/" class="post-title-link" itemprop="url">DNS Resolve</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          DNS Resolve
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -272,10 +277,8 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
-          <p>在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加<a href="http://www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)">www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)</a></p>
+    <div class="post-body" itemprop="articleBody"><p>在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加<a href="http://www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)">www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)</a></p>
 
-      
     </div>
 
     
@@ -283,107 +286,22 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/Blog-Management/" rel="tag"># Blog Management</a>
+              <a href="/tags/Reflection-and-Reminder/" rel="tag"># Reflection and Reminder</a>
+          </div>
 
+        
 
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://www.floweronruins.com/2025/09/17/First-post/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="https://blogimages.floweronruins.com/i/2025/09/19/18nc2j-u4.gif">
-      <meta itemprop="name" content="Duan Xu">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Floweonruins's blog">
-      <meta itemprop="description" content="Working hard on improving myself">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | Floweonruins's blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2025/09/17/First-post/" class="post-title-link" itemprop="url">First post</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2025-09-17 01:37:03" itemprop="dateCreated datePublished" datetime="2025-09-17T01:37:03+08:00">2025-09-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2025-09-19 20:58:16" itemprop="dateModified" datetime="2025-09-19T20:58:16+08:00">2025-09-19</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Personal-Thoughts/" itemprop="url" rel="index"><span itemprop="name">Personal Thoughts</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Changyan: </span>
-    
-    <a title="First post" href="/2025/09/17/First-post/#SOHUCS" itemprop="discussionUrl">
-      <span id="sourceId::1b9252889e9589e51db7de8ad085eb1c" class="cy_cmt_count" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>This is the first post of this blog. Actually, I have already created a blog with the same method before but that was unusable due to inability to disengage the domain name I bought to the github site. Thank to the previous experience the installation of hexo this time is much easier and the only problem I encountered was the need for updating GIT and Node.js. I hope this new start also means a new start in my life,  a start of a phase with better attitudes and more concrete steps towards new goals.<img src="https://blogimages.floweronruins.com/i/2025/09/19/18u2st-tq.jpg" alt="屏幕截图 2024-08-22 112021.jpg"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2025/09/17/First-post/" rel="prev" title="First post">
+                  <i class="fa fa-angle-left"></i> First post
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -392,6 +310,8 @@
 
 
 
+
+    <div class="comments" id="SOHUCS" sid="5d8f1a3c9338232fc9192837297d95d7"></div>
 </div>
   </main>
 
