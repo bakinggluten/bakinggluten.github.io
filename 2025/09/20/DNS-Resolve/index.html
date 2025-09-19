@@ -20,19 +20,21 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"www.floweronruins.com","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.25.0","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"default","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"language":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":true,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js" defer></script>
 
-    <meta name="description" content="在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且">
+    <meta name="description" content="在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加带www的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决dep">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DNS Resolve">
 <meta property="og:url" content="https://www.floweronruins.com/2025/09/20/DNS-Resolve/index.html">
 <meta property="og:site_name" content="Floweonruins&#39;s blog">
-<meta property="og:description" content="在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且">
+<meta property="og:description" content="在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加带www的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决dep">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png">
 <meta property="article:published_time" content="2025-09-19T16:16:35.000Z">
-<meta property="article:modified_time" content="2025-09-19T16:50:27.040Z">
+<meta property="article:modified_time" content="2025-09-19T17:07:50.284Z">
 <meta property="article:author" content="Duan Xu">
 <meta property="article:tag" content="Blog Management">
 <meta property="article:tag" content="Reflection and Reminder">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png">
 
 
 <link rel="canonical" href="https://www.floweronruins.com/2025/09/20/DNS-Resolve/">
@@ -251,7 +253,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2025-09-20 00:16:35 / Modified: 00:50:27" itemprop="dateCreated datePublished" datetime="2025-09-20T00:16:35+08:00">2025-09-20</time>
+      <time title="Created: 2025-09-20 00:16:35 / Modified: 01:07:50" itemprop="dateCreated datePublished" datetime="2025-09-20T00:16:35+08:00">2025-09-20</time>
     </span>
 
   
@@ -277,7 +279,7 @@
     
     
     
-    <div class="post-body" itemprop="articleBody"><p>在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加<a href="http://www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)">www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)</a></p>
+    <div class="post-body" itemprop="articleBody"><p>在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加带www的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。<img src="https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png" alt="1743437549121.png"></p>
 
     </div>
 

@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>DNS Resolve</title>
+    <url>/2025/09/20/DNS-Resolve/</url>
+    <content><![CDATA[<p>在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加带www的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。<img src="https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png" alt="1743437549121.png"></p>
+]]></content>
+      <tags>
+        <tag>Blog Management</tag>
+        <tag>Reflection and Reminder</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>First post</title>
     <url>/2025/09/17/First-post/</url>
     <content><![CDATA[<p>This is the first post of this blog. Actually, I have already created a blog with the same method before but that was unusable due to inability to disengage the domain name I bought to the github site. Thank to the previous experience the installation of hexo this time is much easier and the only problem I encountered was the need for updating GIT and Node.js. I hope this new start also means a new start in my life,  a start of a phase with better attitudes and more concrete steps towards new goals.<img src="https://blogimages.floweronruins.com/i/2025/09/19/18u2st-tq.jpg" alt="屏幕截图 2024-08-22 112021.jpg"></p>
@@ -11,16 +21,6 @@
       <tags>
         <tag>Blog Management</tag>
         <tag>Future Expectations</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>DNS Resolve</title>
-    <url>/2025/09/20/DNS-Resolve/</url>
-    <content><![CDATA[<p>在给网站添加域名的映射时发现无法添加，显示已经存在同名称的A&#x2F;AAAA&#x2F;CNAME DNS记录，解决方法是删除DNS出售网站自带的域名映射。此外，在添加github的ipv4和ipv6地址映射后发现github无法识别到DNS记录（无法直接绑定apex domain），需要添加<a href="http://www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)">www.example.com的域名后方可正常识别。这篇文章在总结问题的同时准备对多文字进行测试，并且尝试提供对于解决deploy更新内容不成功问题的思路。![1743437549121.png](https://blogimages.floweronruins.com/i/2025/09/20/114cj-ch.png)</a></p>
-]]></content>
-      <tags>
-        <tag>Blog Management</tag>
-        <tag>Reflection and Reminder</tag>
       </tags>
   </entry>
 </search>
