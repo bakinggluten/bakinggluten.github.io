@@ -13,7 +13,8 @@
   <entry>
     <title>Deployment Related Issues</title>
     <url>/2025/09/20/Deployment-Related-Issues/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>Eventually, two issues related to the deployment were solved. As it turns out, one should read the document more closely before taking any actions. The problem that the content would not update after deployment was because the public folder need to be deleted and the new version can be generated and uploaded, therefore “hexo cleaning” command have to be executed before deployment. As for the issue that DNS resolving was override everytime after deployment, that is solved by adding the CNAME file in the source folder. Both solution was found in <a href="https://hexo.io/docs/github-pages">https://hexo.io/docs/github-pages</a><br><img src="https://blogimages.floweronruins.com/i/2025/09/20/3aufo-yy.jpg" alt="微信图片_20240727101217.jpg"></p>
+]]></content>
       <categories>
         <category>Reflection and Reminder</category>
       </categories>
